@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#maker {
+    font-family: 'Cursive', fantasy;
+    font-size: 24px; /* Adjust size as needed */
+}
+
+#planetary-data {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#planetary-data th, #planetary-data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9em; /* Initial font size */
+    transition: font-size 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for font size and box-shadow */
+}
+
+#planetary-data tr:hover td {
+    font-size: x-large; /* Increase font size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to cells for column-like effect */
+    position: relative;
+    z-index: 1; /* Ensure the shadow appears over adjacent cells */
+}
+
+#planetary-data th {
+    background-color: darkcyan;
+    color: white;
+}
+
+#planetary-data tr:nth-child(even) {
+    background-color: #808080; /* Middle dark gray for even rows */
+}
+
+#planetary-data tr:hover {
+    background-color: #ddd; /* Light gray for hover effect */
+}
+
+#planetary-data th sup, #planetary-data td sup {
+    font-size: smaller;
+}
+
+
+
